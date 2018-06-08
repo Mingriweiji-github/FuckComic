@@ -127,9 +127,13 @@ public struct UNoticeBarConfig {
     }
 
 }
-//open class UnoticeBar: UIView {
-//    private var config = UnoticeBar
-//}
+open class UnoticeBar: UIView {
+    private var config = UNoticeBarConfig()
+    
+//    open var titleLabel: UILabel? {
+//        return _titleLabel
+//    }
+}
 
 
 
