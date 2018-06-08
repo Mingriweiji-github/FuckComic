@@ -1,0 +1,6 @@
+framework module Pods_FuckComic {
+  umbrella header "Pods-FuckComic-umbrella.h"
+
+  export *
+  module * { export * }
+}

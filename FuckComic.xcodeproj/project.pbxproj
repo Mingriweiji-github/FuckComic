@@ -14,6 +14,9 @@
 		A694E2ED20CA7363000BAE43 /* FuckComicUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A694E2EC20CA7363000BAE43 /* FuckComicUITests.swift */; };
 		A694E30920CA74A4000BAE43 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A694E2FB20CA74A4000BAE43 /* AppDelegate.swift */; };
 		A694E30A20CA74A4000BAE43 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A694E30820CA74A4000BAE43 /* ViewController.swift */; };
+		A694E30C20CA7E8D000BAE43 /* Global.swift in Sources */ = {isa = PBXBuildFile; fileRef = A694E30B20CA7E8D000BAE43 /* Global.swift */; };
+		A694E31020CA83FB000BAE43 /* NoticeBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = A694E30F20CA83FB000BAE43 /* NoticeBar.swift */; };
+		B62B32C548462D4913BB737A /* Pods_FuckComic.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 833313D58C4E583F489458F4 /* Pods_FuckComic.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,6 +37,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		833313D58C4E583F489458F4 /* Pods_FuckComic.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FuckComic.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		938916BBAF2635F2C578480E /* Pods-FuckComic.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FuckComic.release.xcconfig"; path = "Pods/Target Support Files/Pods-FuckComic/Pods-FuckComic.release.xcconfig"; sourceTree = "<group>"; };
 		A694E2C920CA7362000BAE43 /* FuckComic.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FuckComic.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A694E2D120CA7362000BAE43 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		A694E2D320CA7363000BAE43 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -47,6 +52,9 @@
 		A694E2EE20CA7363000BAE43 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A694E2FB20CA74A4000BAE43 /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A694E30820CA74A4000BAE43 /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		A694E30B20CA7E8D000BAE43 /* Global.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Global.swift; sourceTree = "<group>"; };
+		A694E30F20CA83FB000BAE43 /* NoticeBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoticeBar.swift; sourceTree = "<group>"; };
+		F8DF1AD7E75AF9F9B3AD9F9B /* Pods-FuckComic.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FuckComic.debug.xcconfig"; path = "Pods/Target Support Files/Pods-FuckComic/Pods-FuckComic.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +62,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B62B32C548462D4913BB737A /* Pods_FuckComic.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -81,6 +90,8 @@
 				A694E2E020CA7363000BAE43 /* FuckComicTests */,
 				A694E2EB20CA7363000BAE43 /* FuckComicUITests */,
 				A694E2CA20CA7362000BAE43 /* Products */,
+				C0C78986DD5BAB2FA09C7E68 /* Pods */,
+				C92B892C9B48B62EF5B1DAF6 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -97,6 +108,7 @@
 		A694E2CB20CA7362000BAE43 /* FuckComic */ = {
 			isa = PBXGroup;
 			children = (
+				A694E30D20CA83E6000BAE43 /* Compoment */,
 				A694E2FA20CA74A4000BAE43 /* Classes */,
 				A694E2D020CA7362000BAE43 /* Main.storyboard */,
 				A694E2D320CA7363000BAE43 /* Assets.xcassets */,
@@ -128,6 +140,7 @@
 			isa = PBXGroup;
 			children = (
 				A694E2FB20CA74A4000BAE43 /* AppDelegate.swift */,
+				A694E30B20CA7E8D000BAE43 /* Global.swift */,
 				A694E30820CA74A4000BAE43 /* ViewController.swift */,
 				A694E2FC20CA74A4000BAE43 /* Base */,
 				A694E2FF20CA74A4000BAE43 /* Home */,
@@ -229,6 +242,39 @@
 			path = ViewController;
 			sourceTree = "<group>";
 		};
+		A694E30D20CA83E6000BAE43 /* Compoment */ = {
+			isa = PBXGroup;
+			children = (
+				A694E30E20CA83E6000BAE43 /* NoticeBar */,
+			);
+			path = Compoment;
+			sourceTree = "<group>";
+		};
+		A694E30E20CA83E6000BAE43 /* NoticeBar */ = {
+			isa = PBXGroup;
+			children = (
+				A694E30F20CA83FB000BAE43 /* NoticeBar.swift */,
+			);
+			path = NoticeBar;
+			sourceTree = "<group>";
+		};
+		C0C78986DD5BAB2FA09C7E68 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				F8DF1AD7E75AF9F9B3AD9F9B /* Pods-FuckComic.debug.xcconfig */,
+				938916BBAF2635F2C578480E /* Pods-FuckComic.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		C92B892C9B48B62EF5B1DAF6 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				833313D58C4E583F489458F4 /* Pods_FuckComic.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -236,9 +282,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = A694E2F120CA7363000BAE43 /* Build configuration list for PBXNativeTarget "FuckComic" */;
 			buildPhases = (
+				6E74B03933F129BE783DA21E /* [CP] Check Pods Manifest.lock */,
 				A694E2C520CA7362000BAE43 /* Sources */,
 				A694E2C620CA7362000BAE43 /* Frameworks */,
 				A694E2C720CA7362000BAE43 /* Resources */,
+				FCAF4FA85FD9336C1E3D7AF3 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -355,13 +403,80 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		6E74B03933F129BE783DA21E /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-FuckComic-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		FCAF4FA85FD9336C1E3D7AF3 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-FuckComic/Pods-FuckComic-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/EmptyDataSet-Swift/EmptyDataSet_Swift.framework",
+				"${BUILT_PRODUCTS_DIR}/HMSegmentedControl/HMSegmentedControl.framework",
+				"${BUILT_PRODUCTS_DIR}/HandyJSON/HandyJSON.framework",
+				"${BUILT_PRODUCTS_DIR}/IQKeyboardManagerSwift/IQKeyboardManagerSwift.framework",
+				"${BUILT_PRODUCTS_DIR}/Kingfisher/Kingfisher.framework",
+				"${BUILT_PRODUCTS_DIR}/LLCycleScrollView/LLCycleScrollView.framework",
+				"${BUILT_PRODUCTS_DIR}/MBProgressHUD/MBProgressHUD.framework",
+				"${BUILT_PRODUCTS_DIR}/MJRefresh/MJRefresh.framework",
+				"${BUILT_PRODUCTS_DIR}/Moya/Moya.framework",
+				"${BUILT_PRODUCTS_DIR}/Result/Result.framework",
+				"${BUILT_PRODUCTS_DIR}/Reusable/Reusable.framework",
+				"${BUILT_PRODUCTS_DIR}/SnapKit/SnapKit.framework",
+				"${BUILT_PRODUCTS_DIR}/Then/Then.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/EmptyDataSet_Swift.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/HMSegmentedControl.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/HandyJSON.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/IQKeyboardManagerSwift.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Kingfisher.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/LLCycleScrollView.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/MBProgressHUD.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/MJRefresh.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Moya.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Result.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Reusable.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SnapKit.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Then.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-FuckComic/Pods-FuckComic-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		A694E2C520CA7362000BAE43 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				A694E30920CA74A4000BAE43 /* AppDelegate.swift in Sources */,
+				A694E31020CA83FB000BAE43 /* NoticeBar.swift in Sources */,
 				A694E30A20CA74A4000BAE43 /* ViewController.swift in Sources */,
+				A694E30C20CA7E8D000BAE43 /* Global.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -532,6 +647,7 @@
 		};
 		A694E2F220CA7363000BAE43 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = F8DF1AD7E75AF9F9B3AD9F9B /* Pods-FuckComic.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -550,6 +666,7 @@
 		};
 		A694E2F320CA7363000BAE43 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 938916BBAF2635F2C578480E /* Pods-FuckComic.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;

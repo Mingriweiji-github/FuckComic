@@ -7,16 +7,42 @@
 //
 
 import UIKit
+import Alamofire
+import IQKeyboardManagerSwift
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?
+    
+    lazy var reachability: NetworkReachabilityManager? = {
+        return NetworkReachabilityManager(host: "http://app.u17.com")
+    }()
 
+    var orientation: UIInterfaceOrientationMask = .portrait
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
         return true
+    }
+    
+    func config() {
+        IQKeyboardManager.shared.enable = true
+        IQKeyboardManager.shared.shouldResignOnTouchOutside = true
+        let defaults = UserDefaults.standard
+        if defaults.value(forKey: String.sexTypeKey) == nil {
+            defaults.set(1, forKey: String.sexTypeKey)
+            defaults.synchronize()
+        }
+        
+        reachability?.listener = { status in
+            switch status {
+            case .reachable(.wwan):
+                
+            default:
+                <#code#>
+            }
+        }
     }
 
     func applicationWillResignActive(_ application: UIApplication) {
