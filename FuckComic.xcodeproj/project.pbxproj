@@ -16,6 +16,8 @@
 		A694E30A20CA74A4000BAE43 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A694E30820CA74A4000BAE43 /* ViewController.swift */; };
 		A694E30C20CA7E8D000BAE43 /* Global.swift in Sources */ = {isa = PBXBuildFile; fileRef = A694E30B20CA7E8D000BAE43 /* Global.swift */; };
 		A694E31020CA83FB000BAE43 /* NoticeBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = A694E30F20CA83FB000BAE43 /* NoticeBar.swift */; };
+		A694E31320CE747B000BAE43 /* UIBarButtonItemFixSpace.swift in Sources */ = {isa = PBXBuildFile; fileRef = A694E31220CE747B000BAE43 /* UIBarButtonItemFixSpace.swift */; };
+		A694E31620CE7756000BAE43 /* DispatchQueueExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = A694E31520CE7756000BAE43 /* DispatchQueueExtension.swift */; };
 		B62B32C548462D4913BB737A /* Pods_FuckComic.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 833313D58C4E583F489458F4 /* Pods_FuckComic.framework */; };
 /* End PBXBuildFile section */
 
@@ -54,6 +56,8 @@
 		A694E30820CA74A4000BAE43 /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		A694E30B20CA7E8D000BAE43 /* Global.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Global.swift; sourceTree = "<group>"; };
 		A694E30F20CA83FB000BAE43 /* NoticeBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoticeBar.swift; sourceTree = "<group>"; };
+		A694E31220CE747B000BAE43 /* UIBarButtonItemFixSpace.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIBarButtonItemFixSpace.swift; sourceTree = "<group>"; };
+		A694E31520CE7756000BAE43 /* DispatchQueueExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DispatchQueueExtension.swift; sourceTree = "<group>"; };
 		F8DF1AD7E75AF9F9B3AD9F9B /* Pods-FuckComic.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FuckComic.debug.xcconfig"; path = "Pods/Target Support Files/Pods-FuckComic/Pods-FuckComic.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -245,6 +249,8 @@
 		A694E30D20CA83E6000BAE43 /* Compoment */ = {
 			isa = PBXGroup;
 			children = (
+				A694E31420CE7731000BAE43 /* Extension */,
+				A694E31120CE7447000BAE43 /* BarButtonItem */,
 				A694E30E20CA83E6000BAE43 /* NoticeBar */,
 			);
 			path = Compoment;
@@ -256,6 +262,22 @@
 				A694E30F20CA83FB000BAE43 /* NoticeBar.swift */,
 			);
 			path = NoticeBar;
+			sourceTree = "<group>";
+		};
+		A694E31120CE7447000BAE43 /* BarButtonItem */ = {
+			isa = PBXGroup;
+			children = (
+				A694E31220CE747B000BAE43 /* UIBarButtonItemFixSpace.swift */,
+			);
+			path = BarButtonItem;
+			sourceTree = "<group>";
+		};
+		A694E31420CE7731000BAE43 /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				A694E31520CE7756000BAE43 /* DispatchQueueExtension.swift */,
+			);
+			path = Extension;
 			sourceTree = "<group>";
 		};
 		C0C78986DD5BAB2FA09C7E68 /* Pods */ = {
@@ -473,10 +495,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A694E31320CE747B000BAE43 /* UIBarButtonItemFixSpace.swift in Sources */,
 				A694E30920CA74A4000BAE43 /* AppDelegate.swift in Sources */,
 				A694E31020CA83FB000BAE43 /* NoticeBar.swift in Sources */,
 				A694E30A20CA74A4000BAE43 /* ViewController.swift in Sources */,
 				A694E30C20CA7E8D000BAE43 /* Global.swift in Sources */,
+				A694E31620CE7756000BAE43 /* DispatchQueueExtension.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

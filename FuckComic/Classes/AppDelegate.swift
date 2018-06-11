@@ -23,6 +23,14 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
+        
+        config()
+        
+        window = UIWindow(frame: UIScreen.main.bounds)
+        window?.backgroundColor = UIColor.white
+        window?.rootViewController = UITabBarController()
+        window?.makeKeyAndVisible()
+        
         return true
     }
     
@@ -38,13 +46,16 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         reachability?.listener = { status in
             switch status {
             case .reachable(.wwan):
-                
-            default:
-                <#code#>
+                UnoticeBar(config: UNoticeBarConfig(title: "主人,检测到您正在使用移动数据")).show(duration: 2)
+            default: break
             }
         }
+        reachability?.startListening()
     }
 
+    func application(_ application: UIApplication, supportedInterfaceOrientationsFor window: UIWindow?) -> UIInterfaceOrientationMask {
+        return orientation
+    }
     func applicationWillResignActive(_ application: UIApplication) {
         // Sent when the application is about to move from active to inactive state. This can occur for certain types of temporary interruptions (such as an incoming phone call or SMS message) or when the user quits the application and it begins the transition to the background state.
         // Use this method to pause ongoing tasks, disable timers, and invalidate graphics rendering callbacks. Games should use this method to pause the game.
@@ -70,3 +81,17 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
 }
 
+extension UIApplication{
+    class func changeOrientationTo(landscapeRight: Bool) {
+        guard let delegate = UIApplication.shared.delegate as? AppDelegate else { return }
+        if landscapeRight == true {
+            delegate.orientation = .landscapeRight
+            UIApplication.shared.supportedInterfaceOrientations(for: delegate.window)
+            UIDevice.current.setValue(UIInterfaceOrientation.landscapeRight.rawValue, forKey: "orientation")
+        }else {
+            delegate.orientation = .portrait
+            UIApplication.shared.supportedInterfaceOrientations(for: delegate.window)
+            UIDevice.current.setValue(UIInterfaceOrientation.portrait.rawValue, forKey: "orientation")
+        }
+    }
+}
