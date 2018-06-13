@@ -13,11 +13,18 @@
 		A694E2E220CA7363000BAE43 /* FuckComicTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A694E2E120CA7363000BAE43 /* FuckComicTests.swift */; };
 		A694E2ED20CA7363000BAE43 /* FuckComicUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A694E2EC20CA7363000BAE43 /* FuckComicUITests.swift */; };
 		A694E30920CA74A4000BAE43 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A694E2FB20CA74A4000BAE43 /* AppDelegate.swift */; };
-		A694E30A20CA74A4000BAE43 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A694E30820CA74A4000BAE43 /* ViewController.swift */; };
 		A694E30C20CA7E8D000BAE43 /* Global.swift in Sources */ = {isa = PBXBuildFile; fileRef = A694E30B20CA7E8D000BAE43 /* Global.swift */; };
 		A694E31020CA83FB000BAE43 /* NoticeBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = A694E30F20CA83FB000BAE43 /* NoticeBar.swift */; };
 		A694E31320CE747B000BAE43 /* UIBarButtonItemFixSpace.swift in Sources */ = {isa = PBXBuildFile; fileRef = A694E31220CE747B000BAE43 /* UIBarButtonItemFixSpace.swift */; };
 		A694E31620CE7756000BAE43 /* DispatchQueueExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = A694E31520CE7756000BAE43 /* DispatchQueueExtension.swift */; };
+		A694E31820CFAB28000BAE43 /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A694E31720CFAB28000BAE43 /* BaseViewController.swift */; };
+		A694E31A20CFACD3000BAE43 /* UNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A694E31920CFACD3000BAE43 /* UNavigationController.swift */; };
+		A694E31C20CFB1E9000BAE43 /* UIColorExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = A694E31B20CFB1E9000BAE43 /* UIColorExtension.swift */; };
+		A694E31E20CFBD12000BAE43 /* UTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A694E31D20CFBD12000BAE43 /* UTabBarController.swift */; };
+		A694E32020CFBF2D000BAE43 /* UHomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A694E31F20CFBF2D000BAE43 /* UHomeViewController.swift */; };
+		A694E32220CFBF71000BAE43 /* UPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A694E32120CFBF71000BAE43 /* UPageViewController.swift */; };
+		A6A9254C20D0EF9A0023537D /* USearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6A9254B20D0EF9A0023537D /* USearchViewController.swift */; };
+		A6A9254F20D0F13B0023537D /* UModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6A9254E20D0F13B0023537D /* UModel.swift */; };
 		B62B32C548462D4913BB737A /* Pods_FuckComic.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 833313D58C4E583F489458F4 /* Pods_FuckComic.framework */; };
 /* End PBXBuildFile section */
 
@@ -53,11 +60,18 @@
 		A694E2EC20CA7363000BAE43 /* FuckComicUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FuckComicUITests.swift; sourceTree = "<group>"; };
 		A694E2EE20CA7363000BAE43 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A694E2FB20CA74A4000BAE43 /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		A694E30820CA74A4000BAE43 /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		A694E30B20CA7E8D000BAE43 /* Global.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Global.swift; sourceTree = "<group>"; };
 		A694E30F20CA83FB000BAE43 /* NoticeBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoticeBar.swift; sourceTree = "<group>"; };
 		A694E31220CE747B000BAE43 /* UIBarButtonItemFixSpace.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIBarButtonItemFixSpace.swift; sourceTree = "<group>"; };
 		A694E31520CE7756000BAE43 /* DispatchQueueExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DispatchQueueExtension.swift; sourceTree = "<group>"; };
+		A694E31720CFAB28000BAE43 /* BaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
+		A694E31920CFACD3000BAE43 /* UNavigationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UNavigationController.swift; sourceTree = "<group>"; };
+		A694E31B20CFB1E9000BAE43 /* UIColorExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIColorExtension.swift; sourceTree = "<group>"; };
+		A694E31D20CFBD12000BAE43 /* UTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UTabBarController.swift; sourceTree = "<group>"; };
+		A694E31F20CFBF2D000BAE43 /* UHomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UHomeViewController.swift; sourceTree = "<group>"; };
+		A694E32120CFBF71000BAE43 /* UPageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UPageViewController.swift; sourceTree = "<group>"; };
+		A6A9254B20D0EF9A0023537D /* USearchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = USearchViewController.swift; sourceTree = "<group>"; };
+		A6A9254E20D0F13B0023537D /* UModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UModel.swift; sourceTree = "<group>"; };
 		F8DF1AD7E75AF9F9B3AD9F9B /* Pods-FuckComic.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FuckComic.debug.xcconfig"; path = "Pods/Target Support Files/Pods-FuckComic/Pods-FuckComic.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -112,6 +126,7 @@
 		A694E2CB20CA7362000BAE43 /* FuckComic */ = {
 			isa = PBXGroup;
 			children = (
+				A6A9254D20D0F1290023537D /* Models */,
 				A694E30D20CA83E6000BAE43 /* Compoment */,
 				A694E2FA20CA74A4000BAE43 /* Classes */,
 				A694E2D020CA7362000BAE43 /* Main.storyboard */,
@@ -145,7 +160,6 @@
 			children = (
 				A694E2FB20CA74A4000BAE43 /* AppDelegate.swift */,
 				A694E30B20CA7E8D000BAE43 /* Global.swift */,
-				A694E30820CA74A4000BAE43 /* ViewController.swift */,
 				A694E2FC20CA74A4000BAE43 /* Base */,
 				A694E2FF20CA74A4000BAE43 /* Home */,
 				A694E30220CA74A4000BAE43 /* Mine */,
@@ -173,6 +187,10 @@
 		A694E2FE20CA74A4000BAE43 /* ViewController */ = {
 			isa = PBXGroup;
 			children = (
+				A694E31720CFAB28000BAE43 /* BaseViewController.swift */,
+				A694E31920CFACD3000BAE43 /* UNavigationController.swift */,
+				A694E31D20CFBD12000BAE43 /* UTabBarController.swift */,
+				A694E32120CFBF71000BAE43 /* UPageViewController.swift */,
 			);
 			path = ViewController;
 			sourceTree = "<group>";
@@ -196,6 +214,7 @@
 		A694E30120CA74A4000BAE43 /* ViewController */ = {
 			isa = PBXGroup;
 			children = (
+				A694E31F20CFBF2D000BAE43 /* UHomeViewController.swift */,
 			);
 			path = ViewController;
 			sourceTree = "<group>";
@@ -242,6 +261,7 @@
 		A694E30720CA74A4000BAE43 /* ViewController */ = {
 			isa = PBXGroup;
 			children = (
+				A6A9254B20D0EF9A0023537D /* USearchViewController.swift */,
 			);
 			path = ViewController;
 			sourceTree = "<group>";
@@ -275,9 +295,18 @@
 		A694E31420CE7731000BAE43 /* Extension */ = {
 			isa = PBXGroup;
 			children = (
+				A694E31B20CFB1E9000BAE43 /* UIColorExtension.swift */,
 				A694E31520CE7756000BAE43 /* DispatchQueueExtension.swift */,
 			);
 			path = Extension;
+			sourceTree = "<group>";
+		};
+		A6A9254D20D0F1290023537D /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				A6A9254E20D0F13B0023537D /* UModel.swift */,
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 		C0C78986DD5BAB2FA09C7E68 /* Pods */ = {
@@ -495,12 +524,19 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A6A9254C20D0EF9A0023537D /* USearchViewController.swift in Sources */,
 				A694E31320CE747B000BAE43 /* UIBarButtonItemFixSpace.swift in Sources */,
 				A694E30920CA74A4000BAE43 /* AppDelegate.swift in Sources */,
 				A694E31020CA83FB000BAE43 /* NoticeBar.swift in Sources */,
-				A694E30A20CA74A4000BAE43 /* ViewController.swift in Sources */,
+				A694E31C20CFB1E9000BAE43 /* UIColorExtension.swift in Sources */,
 				A694E30C20CA7E8D000BAE43 /* Global.swift in Sources */,
+				A6A9254F20D0F13B0023537D /* UModel.swift in Sources */,
+				A694E32020CFBF2D000BAE43 /* UHomeViewController.swift in Sources */,
 				A694E31620CE7756000BAE43 /* DispatchQueueExtension.swift in Sources */,
+				A694E31820CFAB28000BAE43 /* BaseViewController.swift in Sources */,
+				A694E31A20CFACD3000BAE43 /* UNavigationController.swift in Sources */,
+				A694E31E20CFBD12000BAE43 /* UTabBarController.swift in Sources */,
+				A694E32220CFBF71000BAE43 /* UPageViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
