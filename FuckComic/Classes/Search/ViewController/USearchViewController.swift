@@ -39,11 +39,24 @@ class USearchViewController: BaseViewController {
     }()
     
     private lazy var historyTable: UITableView = {
-        let tw = UITableView(frame: CGRect.zero, style: .grouped)
-        tw.delegate = self as? UITableViewDelegate
-        tw.dataSource = self as? UITableViewDataSource
-        tw.register(cellType: )
+        let tableView = UITableView(frame: CGRect.zero, style: .grouped)
+        tableView.delegate = self as? UITableViewDelegate
+        tableView.dataSource = self as? UITableViewDataSource
+        tableView.register(cellType: UbaseTableViewCell.self)
+        tableView.register(headerFooterViewType: USearchHead.self)
+        tableView.register(headerFooterViewType: USearchTFoot.self)
+        return tableView
     }()
+    
+    lazy var searchTableView: UITableView = {
+        let searchTB = UITableView(frame: CGRect.zero, style: .grouped)
+        searchTB.delegate = self as? UITableViewDelegate
+        searchTB.dataSource = self as? UITableViewDataSource
+        searchTB.register(cellType: )
+        return <#value#>
+    }()
+    
+    
     
 }
 

@@ -34,6 +34,20 @@
 		A6A9255E20D35EA20023537D /* UBaseTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6A9255D20D35EA20023537D /* UBaseTableViewCell.swift */; };
 		A6A9256020D35F850023537D /* UBaseCollectionReusableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6A9255F20D35F850023537D /* UBaseCollectionReusableView.swift */; };
 		A6A9256220D360160023537D /* UWebViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6A9256120D360160023537D /* UWebViewController.swift */; };
+		A6A9256720D3A0A50023537D /* UComicCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6A9256620D3A0A50023537D /* UComicCell.swift */; };
+		A6A9257520D3C82B0023537D /* UCommentTCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6A9256820D3C82A0023537D /* UCommentTCell.swift */; };
+		A6A9257620D3C82B0023537D /* UOtherWorksTCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6A9256920D3C82A0023537D /* UOtherWorksTCell.swift */; };
+		A6A9257720D3C82B0023537D /* UDescriptionTCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6A9256A20D3C82A0023537D /* UDescriptionTCell.swift */; };
+		A6A9257820D3C82B0023537D /* UReadCCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6A9256B20D3C82B0023537D /* UReadCCell.swift */; };
+		A6A9257920D3C82B0023537D /* UReadTopBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6A9256C20D3C82B0023537D /* UReadTopBar.swift */; };
+		A6A9257A20D3C82B0023537D /* UTicketTCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6A9256D20D3C82B0023537D /* UTicketTCell.swift */; };
+		A6A9257B20D3C82B0023537D /* UOtherWorksCCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6A9256E20D3C82B0023537D /* UOtherWorksCCell.swift */; };
+		A6A9257C20D3C82B0023537D /* UGuessLikeTCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6A9256F20D3C82B0023537D /* UGuessLikeTCell.swift */; };
+		A6A9257D20D3C82B0023537D /* UChapterCHead.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6A9257020D3C82B0023537D /* UChapterCHead.swift */; };
+		A6A9257E20D3C82B0023537D /* UComicHead.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6A9257120D3C82B0023537D /* UComicHead.swift */; };
+		A6A9257F20D3C82B0023537D /* UReadBottomBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6A9257220D3C82B0023537D /* UReadBottomBar.swift */; };
+		A6A9258020D3C82B0023537D /* UChapterCCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6A9257320D3C82B0023537D /* UChapterCCell.swift */; };
+		A6A9258120D3C82B0023537D /* UComicTCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6A9257420D3C82B0023537D /* UComicTCell.swift */; };
 		B62B32C548462D4913BB737A /* Pods_FuckComic.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 833313D58C4E583F489458F4 /* Pods_FuckComic.framework */; };
 /* End PBXBuildFile section */
 
@@ -90,6 +104,20 @@
 		A6A9255D20D35EA20023537D /* UBaseTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UBaseTableViewCell.swift; sourceTree = "<group>"; };
 		A6A9255F20D35F850023537D /* UBaseCollectionReusableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UBaseCollectionReusableView.swift; sourceTree = "<group>"; };
 		A6A9256120D360160023537D /* UWebViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UWebViewController.swift; sourceTree = "<group>"; };
+		A6A9256620D3A0A50023537D /* UComicCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UComicCell.swift; sourceTree = "<group>"; };
+		A6A9256820D3C82A0023537D /* UCommentTCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UCommentTCell.swift; sourceTree = "<group>"; };
+		A6A9256920D3C82A0023537D /* UOtherWorksTCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UOtherWorksTCell.swift; sourceTree = "<group>"; };
+		A6A9256A20D3C82A0023537D /* UDescriptionTCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UDescriptionTCell.swift; sourceTree = "<group>"; };
+		A6A9256B20D3C82B0023537D /* UReadCCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UReadCCell.swift; sourceTree = "<group>"; };
+		A6A9256C20D3C82B0023537D /* UReadTopBar.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UReadTopBar.swift; sourceTree = "<group>"; };
+		A6A9256D20D3C82B0023537D /* UTicketTCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UTicketTCell.swift; sourceTree = "<group>"; };
+		A6A9256E20D3C82B0023537D /* UOtherWorksCCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UOtherWorksCCell.swift; sourceTree = "<group>"; };
+		A6A9256F20D3C82B0023537D /* UGuessLikeTCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UGuessLikeTCell.swift; sourceTree = "<group>"; };
+		A6A9257020D3C82B0023537D /* UChapterCHead.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UChapterCHead.swift; sourceTree = "<group>"; };
+		A6A9257120D3C82B0023537D /* UComicHead.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UComicHead.swift; sourceTree = "<group>"; };
+		A6A9257220D3C82B0023537D /* UReadBottomBar.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UReadBottomBar.swift; sourceTree = "<group>"; };
+		A6A9257320D3C82B0023537D /* UChapterCCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UChapterCCell.swift; sourceTree = "<group>"; };
+		A6A9257420D3C82B0023537D /* UComicTCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UComicTCell.swift; sourceTree = "<group>"; };
 		F8DF1AD7E75AF9F9B3AD9F9B /* Pods-FuckComic.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FuckComic.debug.xcconfig"; path = "Pods/Target Support Files/Pods-FuckComic/Pods-FuckComic.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -177,6 +205,7 @@
 			isa = PBXGroup;
 			children = (
 				A694E2FB20CA74A4000BAE43 /* AppDelegate.swift */,
+				A6A9256320D3A0890023537D /* Comic */,
 				A694E30B20CA7E8D000BAE43 /* Global.swift */,
 				A694E2FC20CA74A4000BAE43 /* Base */,
 				A694E2FF20CA74A4000BAE43 /* Home */,
@@ -342,6 +371,43 @@
 				A6A9255A20D358060023537D /* UCollectionViewSectionBackgroundLayout.swift */,
 			);
 			path = CollectionViewLayout;
+			sourceTree = "<group>";
+		};
+		A6A9256320D3A0890023537D /* Comic */ = {
+			isa = PBXGroup;
+			children = (
+				A6A9256420D3A0890023537D /* View */,
+				A6A9256520D3A0890023537D /* ViewController */,
+			);
+			path = Comic;
+			sourceTree = "<group>";
+		};
+		A6A9256420D3A0890023537D /* View */ = {
+			isa = PBXGroup;
+			children = (
+				A6A9257320D3C82B0023537D /* UChapterCCell.swift */,
+				A6A9257020D3C82B0023537D /* UChapterCHead.swift */,
+				A6A9257120D3C82B0023537D /* UComicHead.swift */,
+				A6A9257420D3C82B0023537D /* UComicTCell.swift */,
+				A6A9256820D3C82A0023537D /* UCommentTCell.swift */,
+				A6A9256A20D3C82A0023537D /* UDescriptionTCell.swift */,
+				A6A9256F20D3C82B0023537D /* UGuessLikeTCell.swift */,
+				A6A9256E20D3C82B0023537D /* UOtherWorksCCell.swift */,
+				A6A9256920D3C82A0023537D /* UOtherWorksTCell.swift */,
+				A6A9257220D3C82B0023537D /* UReadBottomBar.swift */,
+				A6A9256B20D3C82B0023537D /* UReadCCell.swift */,
+				A6A9256C20D3C82B0023537D /* UReadTopBar.swift */,
+				A6A9256D20D3C82B0023537D /* UTicketTCell.swift */,
+				A6A9256620D3A0A50023537D /* UComicCell.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		A6A9256520D3A0890023537D /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewController;
 			sourceTree = "<group>";
 		};
 		C0C78986DD5BAB2FA09C7E68 /* Pods */ = {
@@ -561,6 +627,7 @@
 			files = (
 				A6A9254C20D0EF9A0023537D /* USearchViewController.swift in Sources */,
 				A694E31320CE747B000BAE43 /* UIBarButtonItemFixSpace.swift in Sources */,
+				A6A9256720D3A0A50023537D /* UComicCell.swift in Sources */,
 				A694E30920CA74A4000BAE43 /* AppDelegate.swift in Sources */,
 				A6A9255B20D358060023537D /* UCollectionViewAlignedLayout.swift in Sources */,
 				A694E31020CA83FB000BAE43 /* NoticeBar.swift in Sources */,
@@ -568,19 +635,32 @@
 				A6A9255C20D358060023537D /* UCollectionViewSectionBackgroundLayout.swift in Sources */,
 				A6A9256220D360160023537D /* UWebViewController.swift in Sources */,
 				A694E30C20CA7E8D000BAE43 /* Global.swift in Sources */,
+				A6A9257A20D3C82B0023537D /* UTicketTCell.swift in Sources */,
 				A6A9254F20D0F13B0023537D /* UModel.swift in Sources */,
+				A6A9257620D3C82B0023537D /* UOtherWorksTCell.swift in Sources */,
 				A694E32020CFBF2D000BAE43 /* UHomeViewController.swift in Sources */,
+				A6A9257920D3C82B0023537D /* UReadTopBar.swift in Sources */,
+				A6A9257B20D3C82B0023537D /* UOtherWorksCCell.swift in Sources */,
 				A6A9255120D10E2F0023537D /* USearchTHead.swift in Sources */,
 				A694E31620CE7756000BAE43 /* DispatchQueueExtension.swift in Sources */,
 				A694E31820CFAB28000BAE43 /* BaseViewController.swift in Sources */,
 				A694E31A20CFACD3000BAE43 /* UNavigationController.swift in Sources */,
 				A6A9255E20D35EA20023537D /* UBaseTableViewCell.swift in Sources */,
 				A6A9256020D35F850023537D /* UBaseCollectionReusableView.swift in Sources */,
+				A6A9257E20D3C82B0023537D /* UComicHead.swift in Sources */,
+				A6A9257520D3C82B0023537D /* UCommentTCell.swift in Sources */,
+				A6A9258120D3C82B0023537D /* UComicTCell.swift in Sources */,
 				A694E31E20CFBD12000BAE43 /* UTabBarController.swift in Sources */,
 				A6A9255320D10EC60023537D /* UBaseTableHeaderFooterView.swift in Sources */,
 				A6A9255720D113C70023537D /* UBaseCollectionViewClell.swift in Sources */,
+				A6A9257820D3C82B0023537D /* UReadCCell.swift in Sources */,
 				A694E32220CFBF71000BAE43 /* UPageViewController.swift in Sources */,
 				A6A9255520D113930023537D /* USearchFoot.swift in Sources */,
+				A6A9257C20D3C82B0023537D /* UGuessLikeTCell.swift in Sources */,
+				A6A9257720D3C82B0023537D /* UDescriptionTCell.swift in Sources */,
+				A6A9257F20D3C82B0023537D /* UReadBottomBar.swift in Sources */,
+				A6A9258020D3C82B0023537D /* UChapterCCell.swift in Sources */,
+				A6A9257D20D3C82B0023537D /* UChapterCHead.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
