@@ -9,7 +9,7 @@
 import UIKit
 import Reusable
 
-class UbaseTableViewCell: UITableViewCell, Reusable {
+class UBaseTableViewCell: UITableViewCell, Reusable {
     override init(style: UITableViewCellStyle, reuseIdentifier: String?) {
         super.init(style: style, reuseIdentifier: reuseIdentifier)
         selectionStyle = .none

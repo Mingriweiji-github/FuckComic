@@ -9,7 +9,7 @@
 
 import UIKit
 
-class UComicCell: UbaseTableViewCell {
+class UComicCell: UBaseTableViewCell {
     var spinnerName: String?
     
     lazy var iconView: UIImageView = {
@@ -109,7 +109,7 @@ class UComicCell: UbaseTableViewCell {
             
             iconView.kf.setImage(urlString: model.cover, placeHolder: UIImage(named: "normal_placeholder_v"))
             titleLabel.text = model.name
-            subTitleLabel.text = "\(model.tags?.joined(separator: " " ?? "") | \(model.author ?? ""))"
+            subTitleLabel.text = "\(model.tags?.joined(separator: " ") ?? "") | \(model.author ?? ""))"
             desLabel.text = model.description
             
             if spinnerName == "更新时间" {
@@ -159,42 +159,4 @@ class UComicCell: UbaseTableViewCell {
             }
         }
     }
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
 }

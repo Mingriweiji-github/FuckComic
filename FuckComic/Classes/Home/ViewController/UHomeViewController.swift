@@ -19,7 +19,7 @@ class UHomeViewController: UPageViewController {
         navigationItem.rightBarButtonItem = UIBarButtonItem(image: UIImage(named: "nav_search"), style: .plain, target: self, action: #selector(selecAction))
     }
     
-    @objc private func selecAction() {
-        navigationController?.pushViewController(, animated: <#T##Bool#>)
-    }
+//    @objc private func selecAction() {
+//        navigationController?.pushViewController(, animated: <#T##Bool#>)
+//    }
 }
