@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import Reusable
 
 typealias UGuessLikeTCellDidSelectClosure = (_ comic: ComicModel) -> Void
 
@@ -24,7 +25,7 @@ class UGuessLikeTCell: UBaseTableViewCell {
         cw.delegate = self
         cw.dataSource = self
         cw.isScrollEnabled = false
-        cw.register(cellType: UComicCCell.self)
+        cw.register(cellType: UComicCell.self)
         return cw
     }()
 
@@ -66,8 +67,9 @@ extension UGuessLikeTCell: UICollectionViewDelegateFlowLayout, UICollectionViewD
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-        let cell = collectionView.dequeueReusableCell(for: indexPath, cellType: UComicCCell.self)
-        cell.style = .withTitle
+        let cell = collectionView.dequeueReusableCell(for: indexPath, cellType: UComicCell.self)
+        
+//        cell.style = .withTitle
         cell.model = model?.comics?[indexPath.row]
         return cell
     }

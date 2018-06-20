@@ -9,7 +9,7 @@
 
 import UIKit
 
-class UComicCell: UBaseTableViewCell {
+class UComicCell: UBaseCollectionViewCell {
     var spinnerName: String?
     
     lazy var iconView: UIImageView = {
@@ -54,7 +54,6 @@ class UComicCell: UBaseTableViewCell {
     }()
     
     override func configUI() {
-       separatorInset = .zero
         
         contentView.addSubview(iconView)
         iconView.snp.makeConstraints {

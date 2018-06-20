@@ -34,7 +34,7 @@ class UReadCCell: UBaseCollectionViewCell {
         didSet {
             guard let model = model else { return }
             imageView.image = nil
-            imageView.kf.setImage(urlString: model.location, placeholder: placeholder)
+            imageView.kf.setImage(urlString: model.location, placeHolder: placeholder)
         }
     }
 }

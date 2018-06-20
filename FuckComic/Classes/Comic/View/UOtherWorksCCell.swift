@@ -57,7 +57,7 @@ class UOtherWorksCCell: UBaseCollectionViewCell {
         didSet {
             guard let model = model else { return }
             iconView.kf.setImage(urlString: model.coverUrl,
-                                 placeholder: (bounds.width > bounds.height) ? UIImage(named: "normal_placeholder_h") : UIImage(named: "normal_placeholder_v"))
+                                 placeHolder: (bounds.width > bounds.height) ? UIImage(named: "normal_placeholder_h") : UIImage(named: "normal_placeholder_v"))
             titleLabel.text = model.name
             descLabel.text = "更新至\(model.passChapterNum)话"
         }

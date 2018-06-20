@@ -105,7 +105,7 @@ class UComicTCell: UBaseTableViewCell {
     var model: ComicModel? {
         didSet {
             guard let model = model else { return }
-            iconView.kf.setImage(urlString: model.cover, placeholder: UIImage(named: "normal_placeholder_v"))
+            iconView.kf.setImage(urlString: model.cover, placeHolder: UIImage(named: "normal_placeholder_v"))
             
             titleLabel.text = model.name
             subTitleLabel.text = "\(model.tags?.joined(separator: " ") ?? "") | \(model.author ?? "")"

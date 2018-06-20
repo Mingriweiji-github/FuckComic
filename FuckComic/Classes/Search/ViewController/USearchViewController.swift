@@ -62,8 +62,7 @@ class USearchViewController: BaseViewController {
         let resultTB = UITableView(frame: CGRect.zero, style: .grouped)
         resultTB.delegate = self
         resultTB.dataSource = self
-        resultTB.register(cellType: UComicCell.self)
-        
+        resultTB.register(cellType: UComicTCell.self)
         return resultTB
     }()
     
@@ -213,7 +212,7 @@ extension USearchViewController: UITableViewDelegate,UITableViewDataSource {
             cell.separatorInset = .zero
             return cell
         }else if tableView == resultTableView {
-            let cell = tableView.dequeueReusableCell(for: indexPath, cellType: UComicCell.self)
+            let cell = tableView.dequeueReusableCell(for: indexPath, cellType: UComicTCell.self)
             cell.model = comics?[indexPath.row]
             return cell
         }else {
@@ -246,8 +245,31 @@ extension USearchViewController: UITableViewDelegate,UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, viewForHeaderInSection section: Int) -> UIView? {
         if tableView == historyTable {
-            let head = tableView.dequeueReusableHeaderFooterView()
+            let head = tableView.dequeueReusableHeaderFooterView(USearchHead.self)
+            head?.titleLabel.text = section == 0 ? "看看你都搜过什么" : "大家都在搜"
+            head?.moreButton.setImage(section == 0 ? UIImage(named: "search_history_delete") : UIImage(named: "search_keyword_refresh"), for: .normal)
             
+            head?.moreButton.isHidden = section == 0 ? (searchHistory.count == 0) : false
+            head?.moreActionClosure {
+                if section == 0 {
+                    self.searchHistory?.removeAll()
+                    self.historyTable.reloadData()
+                    UserDefaults.standard.removeObject(forKey: String.searchHistoryKey)
+                    UserDefaults.standard.synchronize()
+                }else{
+                    self.loadHistory()
+                }
+            }
+            return head
+            
+        }else if tableView == searchTableView {
+            
+            let head = tableView.dequeueReusableHeaderFooterView(USearchHead.self)
+            head?.titleLabel.text = "找到相关漫画\(comics?.count ?? 0) 本"
+            head?.moreButton.isHidden = true
+            return head
+        }else{
+            return nil
         }
     }
     

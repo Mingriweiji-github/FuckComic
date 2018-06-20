@@ -127,7 +127,7 @@ public struct UNoticeBarConfig {
     }
 
 }
-open class UnoticeBar: UIView {
+open class UNoticeBar: UIView {
     private var config = UNoticeBarConfig()
     private var _titleLabel: UILabel?
     private var _imageView: UIImageView?
@@ -213,7 +213,7 @@ open class UnoticeBar: UIView {
     private func show(duration: TimeInterval, willShow: () -> Void, completed: ((_ finished: Bool) -> Void)?) {
         if let subviews = UIApplication.shared.keyWindow?.subviews {
             for view in subviews {
-                if view.isKind(of: UnoticeBar.self) {
+                if view.isKind(of: UNoticeBar.self) {
                     view.removeFromSuperview()
                 }
             }

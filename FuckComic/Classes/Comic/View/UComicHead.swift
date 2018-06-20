@@ -136,8 +136,8 @@ class UComicHead: UIView {
     var detailStatic: ComicStaticModel? {
         didSet {
             guard let detailStatic = detailStatic else { return }
-            bgView.kf.setImage(urlString: detailStatic.cover, placeholder: UIImage(named: "normal_placeholder_v"))
-            coverView.kf.setImage(urlString: detailStatic.cover, placeholder: UIImage(named: "normal_placeholder_v"))
+            bgView.kf.setImage(urlString: detailStatic.cover, placeHolder: UIImage(named: "normal_placeholder_v"))
+            coverView.kf.setImage(urlString: detailStatic.cover, placeHolder: UIImage(named: "normal_placeholder_v"))
             nameLabel.text = detailStatic.name
             authorLabel.text = detailStatic.author?.name
             themes = detailStatic.theme_ids ?? []

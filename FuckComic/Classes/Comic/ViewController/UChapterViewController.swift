@@ -22,7 +22,7 @@ class UChapterViewController: BaseViewController {
         layout.sectionInset = UIEdgeInsetsMake(0, 10, 10, 10)
         layout.minimumInteritemSpacing = 5
         layout.minimumLineSpacing = 10
-        layout.itemSize = CGSize(width: floor((screenWidth - 30) / 2), height: 40)
+        layout.itemSize = CGSize(width: floor((kScreenWidth - 30) / 2), height: 40)
         let cw = UICollectionView(frame: .zero, collectionViewLayout: layout)
         cw.backgroundColor = UIColor.white
         cw.delegate = self
@@ -58,7 +58,7 @@ extension UChapterViewController: UICollectionViewDelegateFlowLayout, UICollecti
     }
     
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, referenceSizeForHeaderInSection section: Int) -> CGSize {
-        return CGSize(width: screenWidth, height: 44)
+        return CGSize(width: kScreenWidth, height: 44)
     }
     
     func collectionView(_ collectionView: UICollectionView, viewForSupplementaryElementOfKind kind: String, at indexPath: IndexPath) -> UICollectionReusableView {

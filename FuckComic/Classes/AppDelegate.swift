@@ -46,7 +46,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         reachability?.listener = { status in
             switch status {
             case .reachable(.wwan):
-                UnoticeBar(config: UNoticeBarConfig(title: "主人,检测到您正在使用移动数据")).show(duration: 2)
+                UNoticeBar(config: UNoticeBarConfig(title: "主人,检测到您正在使用移动数据")).show(duration: 2)
             default: break
             }
         }
