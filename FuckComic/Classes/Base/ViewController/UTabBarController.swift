@@ -15,6 +15,7 @@ class UTabBarController: UITabBarController {
         
         tabBar.isTranslucent = false
         
+//        let homePageVC = UHomeViewController(titles: ["推荐","VIP","订阅","流行"], vcs: [], pagestyles: <#T##UPageStyle#>)
         
     }
 }
