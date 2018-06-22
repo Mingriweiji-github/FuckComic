@@ -20,6 +20,11 @@ class UTabBarController: UITabBarController {
         addChildViewController(homePageVC, title: "首页", image: UIImage(named: "tab_home"), selectedImage: UIImage(named: "tab_home_S"))
         //分类
         
+        let categoryVC = UCateListViewController()
+        addChildViewController(categoryVC,
+                               title: "分类",
+                               image: UIImage(named: "tab_class"),
+                               selectedImage: UIImage(named: "tab_class_S"))
         
         
         
