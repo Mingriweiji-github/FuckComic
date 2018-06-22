@@ -14,8 +14,29 @@ class UTabBarController: UITabBarController {
         super.viewDidLoad()
         
         tabBar.isTranslucent = false
+        //首页
+        let homePageVC = UHomeViewController(titles: ["推荐","VIP"], vcs: [UBoutiqueListViewController(),UVIPListViewController()], pagestyles: .navigationBarSegment)
         
-//        let homePageVC = UHomeViewController(titles: ["推荐","VIP","订阅","流行"], vcs: [], pagestyles: <#T##UPageStyle#>)
+        addChildViewController(homePageVC, title: "首页", image: UIImage(named: "tab_home"), selectedImage: UIImage(named: "tab_home_S"))
+        //分类
         
+        
+        
+        
+        
+         
     }
+    
+    func addChildViewController(_ childController: UIViewController, title: String?, image: UIImage?, selectedImage:UIImage?) {
+        childController.title = title
+        childController.tabBarItem = UITabBarItem(title: nil,
+                                                  image: image?.withRenderingMode(.alwaysOriginal),
+                                                  selectedImage: selectedImage?.withRenderingMode(.alwaysOriginal))
+        if UIDevice.current.userInterfaceIdiom == .phone {
+            childController.tabBarItem.imageInsets = UIEdgeInsetsMake(6, 0, -6, 0)
+        }
+        
+        addChildViewController(UNavigationController(rootViewController: childController))
+    }
+    
 }

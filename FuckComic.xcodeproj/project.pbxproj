@@ -83,6 +83,9 @@
 		A6A925CA20DBADE20023537D /* UUpdateListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6A925C520DBADE10023537D /* UUpdateListViewController.swift */; };
 		A6A925CB20DBADE20023537D /* UVIPListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6A925C620DBADE10023537D /* UVIPListViewController.swift */; };
 		A6A925CC20DBADE20023537D /* USpecialViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6A925C720DBADE20023537D /* USpecialViewController.swift */; };
+		A6A925D120DCD8240023537D /* UCateListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6A925D020DCD8240023537D /* UCateListViewController.swift */; };
+		A6A925D320DCF3000023537D /* URankCCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6A925D220DCF3000023537D /* URankCCell.swift */; };
+		A6A925D520DCF7DD0023537D /* UTopCCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6A925D420DCF7DD0023537D /* UTopCCell.swift */; };
 		B62B32C548462D4913BB737A /* Pods_FuckComic.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 833313D58C4E583F489458F4 /* Pods_FuckComic.framework */; };
 /* End PBXBuildFile section */
 
@@ -188,6 +191,9 @@
 		A6A925C520DBADE10023537D /* UUpdateListViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UUpdateListViewController.swift; sourceTree = "<group>"; };
 		A6A925C620DBADE10023537D /* UVIPListViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UVIPListViewController.swift; sourceTree = "<group>"; };
 		A6A925C720DBADE20023537D /* USpecialViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = USpecialViewController.swift; sourceTree = "<group>"; };
+		A6A925D020DCD8240023537D /* UCateListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UCateListViewController.swift; sourceTree = "<group>"; };
+		A6A925D220DCF3000023537D /* URankCCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = URankCCell.swift; sourceTree = "<group>"; };
+		A6A925D420DCF7DD0023537D /* UTopCCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UTopCCell.swift; sourceTree = "<group>"; };
 		F8DF1AD7E75AF9F9B3AD9F9B /* Pods-FuckComic.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FuckComic.debug.xcconfig"; path = "Pods/Target Support Files/Pods-FuckComic/Pods-FuckComic.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -276,8 +282,9 @@
 			isa = PBXGroup;
 			children = (
 				A694E2FB20CA74A4000BAE43 /* AppDelegate.swift */,
-				A6A9256320D3A0890023537D /* Comic */,
 				A694E30B20CA7E8D000BAE43 /* Global.swift */,
+				A6A925CD20DCD7F60023537D /* Cate */,
+				A6A9256320D3A0890023537D /* Comic */,
 				A694E2FC20CA74A4000BAE43 /* Base */,
 				A694E2FF20CA74A4000BAE43 /* Home */,
 				A694E30220CA74A4000BAE43 /* Mine */,
@@ -555,6 +562,32 @@
 			path = SnapKitExtension;
 			sourceTree = "<group>";
 		};
+		A6A925CD20DCD7F60023537D /* Cate */ = {
+			isa = PBXGroup;
+			children = (
+				A6A925CE20DCD7F60023537D /* View */,
+				A6A925CF20DCD7F60023537D /* ViewController */,
+			);
+			path = Cate;
+			sourceTree = "<group>";
+		};
+		A6A925CE20DCD7F60023537D /* View */ = {
+			isa = PBXGroup;
+			children = (
+				A6A925D220DCF3000023537D /* URankCCell.swift */,
+				A6A925D420DCF7DD0023537D /* UTopCCell.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		A6A925CF20DCD7F60023537D /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				A6A925D020DCD8240023537D /* UCateListViewController.swift */,
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
 		C0C78986DD5BAB2FA09C7E68 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
@@ -775,6 +808,7 @@
 				A6A925A520DA526C0023537D /* UIDeviceExtension.swift in Sources */,
 				A6A9254C20D0EF9A0023537D /* USearchViewController.swift in Sources */,
 				A694E31320CE747B000BAE43 /* UIBarButtonItemFixSpace.swift in Sources */,
+				A6A925D520DCF7DD0023537D /* UTopCCell.swift in Sources */,
 				A6A9259520DA4C130023537D /* URefresh.swift in Sources */,
 				A6A9256720D3A0A50023537D /* UComicCell.swift in Sources */,
 				A694E30920CA74A4000BAE43 /* AppDelegate.swift in Sources */,
@@ -791,6 +825,7 @@
 				A6A925C220DBACCF0023537D /* UUpdateTCell.swift in Sources */,
 				A6A9254F20D0F13B0023537D /* UModel.swift in Sources */,
 				A6A925C820DBADE20023537D /* URankListViewController.swift in Sources */,
+				A6A925D120DCD8240023537D /* UCateListViewController.swift in Sources */,
 				A6A925A220DA526C0023537D /* StringExtension.swift in Sources */,
 				A6A9259020DA4B3A0023537D /* UDetailViewController.swift in Sources */,
 				A6A9257620D3C82B0023537D /* UOtherWorksTCell.swift in Sources */,
@@ -836,6 +871,7 @@
 				A6A9257F20D3C82B0023537D /* UReadBottomBar.swift in Sources */,
 				A6A925B220DA55450023537D /* ConstraintArrayDSL.swift in Sources */,
 				A6A925AC20DA54A60023537D /* ParallaxHeaderMode.swift in Sources */,
+				A6A925D320DCF3000023537D /* URankCCell.swift in Sources */,
 				A6A9258020D3C82B0023537D /* UChapterCCell.swift in Sources */,
 				A6A925C920DBADE20023537D /* USubscibeListViewController.swift in Sources */,
 				A6A925A020DA526C0023537D /* UIBarButtonItemExtension.swift in Sources */,
