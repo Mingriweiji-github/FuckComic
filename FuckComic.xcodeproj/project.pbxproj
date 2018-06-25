@@ -86,6 +86,10 @@
 		A6A925D120DCD8240023537D /* UCateListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6A925D020DCD8240023537D /* UCateListViewController.swift */; };
 		A6A925D320DCF3000023537D /* URankCCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6A925D220DCF3000023537D /* URankCCell.swift */; };
 		A6A925D520DCF7DD0023537D /* UTopCCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6A925D420DCF7DD0023537D /* UTopCCell.swift */; };
+		A6A925DA20E094CE0023537D /* UBookViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6A925D920E094CE0023537D /* UBookViewController.swift */; };
+		A6A925DC20E094F30023537D /* UCollectListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6A925DB20E094F30023537D /* UCollectListViewController.swift */; };
+		A6A925DE20E095220023537D /* UDocumentListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6A925DD20E095220023537D /* UDocumentListViewController.swift */; };
+		A6A925E020E095420023537D /* UDownloadListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6A925DF20E095420023537D /* UDownloadListViewController.swift */; };
 		B62B32C548462D4913BB737A /* Pods_FuckComic.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 833313D58C4E583F489458F4 /* Pods_FuckComic.framework */; };
 /* End PBXBuildFile section */
 
@@ -194,6 +198,10 @@
 		A6A925D020DCD8240023537D /* UCateListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UCateListViewController.swift; sourceTree = "<group>"; };
 		A6A925D220DCF3000023537D /* URankCCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = URankCCell.swift; sourceTree = "<group>"; };
 		A6A925D420DCF7DD0023537D /* UTopCCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UTopCCell.swift; sourceTree = "<group>"; };
+		A6A925D920E094CE0023537D /* UBookViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UBookViewController.swift; sourceTree = "<group>"; };
+		A6A925DB20E094F30023537D /* UCollectListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UCollectListViewController.swift; sourceTree = "<group>"; };
+		A6A925DD20E095220023537D /* UDocumentListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UDocumentListViewController.swift; sourceTree = "<group>"; };
+		A6A925DF20E095420023537D /* UDownloadListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UDownloadListViewController.swift; sourceTree = "<group>"; };
 		F8DF1AD7E75AF9F9B3AD9F9B /* Pods-FuckComic.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FuckComic.debug.xcconfig"; path = "Pods/Target Support Files/Pods-FuckComic/Pods-FuckComic.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -283,6 +291,7 @@
 			children = (
 				A694E2FB20CA74A4000BAE43 /* AppDelegate.swift */,
 				A694E30B20CA7E8D000BAE43 /* Global.swift */,
+				A6A925D620E094900023537D /* Book */,
 				A6A925CD20DCD7F60023537D /* Cate */,
 				A6A9256320D3A0890023537D /* Comic */,
 				A694E2FC20CA74A4000BAE43 /* Base */,
@@ -588,6 +597,33 @@
 			path = ViewController;
 			sourceTree = "<group>";
 		};
+		A6A925D620E094900023537D /* Book */ = {
+			isa = PBXGroup;
+			children = (
+				A6A925D820E094BC0023537D /* View */,
+				A6A925D720E094BC0023537D /* ViewController */,
+			);
+			path = Book;
+			sourceTree = "<group>";
+		};
+		A6A925D720E094BC0023537D /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				A6A925D920E094CE0023537D /* UBookViewController.swift */,
+				A6A925DB20E094F30023537D /* UCollectListViewController.swift */,
+				A6A925DD20E095220023537D /* UDocumentListViewController.swift */,
+				A6A925DF20E095420023537D /* UDownloadListViewController.swift */,
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
+		A6A925D820E094BC0023537D /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
 		C0C78986DD5BAB2FA09C7E68 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
@@ -819,6 +855,7 @@
 				A6A9255C20D358060023537D /* UCollectionViewSectionBackgroundLayout.swift in Sources */,
 				A6A9256220D360160023537D /* UWebViewController.swift in Sources */,
 				A694E30C20CA7E8D000BAE43 /* Global.swift in Sources */,
+				A6A925DA20E094CE0023537D /* UBookViewController.swift in Sources */,
 				A6A9257A20D3C82B0023537D /* UTicketTCell.swift in Sources */,
 				A6A9258F20DA4B3A0023537D /* UComicListViewController.swift in Sources */,
 				A6A925BE20DBACCF0023537D /* URankTCell.swift in Sources */,
@@ -828,6 +865,7 @@
 				A6A925D120DCD8240023537D /* UCateListViewController.swift in Sources */,
 				A6A925A220DA526C0023537D /* StringExtension.swift in Sources */,
 				A6A9259020DA4B3A0023537D /* UDetailViewController.swift in Sources */,
+				A6A925DC20E094F30023537D /* UCollectListViewController.swift in Sources */,
 				A6A9257620D3C82B0023537D /* UOtherWorksTCell.swift in Sources */,
 				A694E32020CFBF2D000BAE43 /* UHomeViewController.swift in Sources */,
 				A6A9257920D3C82B0023537D /* UReadTopBar.swift in Sources */,
@@ -855,6 +893,7 @@
 				A6A9258E20DA4B3A0023537D /* UChapterViewController.swift in Sources */,
 				A6A9258620DA49B70023537D /* UComicViewController.swift in Sources */,
 				A694E31E20CFBD12000BAE43 /* UTabBarController.swift in Sources */,
+				A6A925E020E095420023537D /* UDownloadListViewController.swift in Sources */,
 				A6A925A320DA526C0023537D /* DictionaryExtension.swift in Sources */,
 				A6A9258D20DA4B3A0023537D /* UOtherWorksViewController.swift in Sources */,
 				A6A9255320D10EC60023537D /* UBaseTableHeaderFooterView.swift in Sources */,
@@ -863,6 +902,7 @@
 				A6A925CA20DBADE20023537D /* UUpdateListViewController.swift in Sources */,
 				A6A925A420DA526C0023537D /* UIViewExtension.swift in Sources */,
 				A694E32220CFBF71000BAE43 /* UPageViewController.swift in Sources */,
+				A6A925DE20E095220023537D /* UDocumentListViewController.swift in Sources */,
 				A6A925B420DB8A960023537D /* UBoutiqueListViewController.swift in Sources */,
 				A6A9255520D113930023537D /* USearchFoot.swift in Sources */,
 				A6A9257C20D3C82B0023537D /* UGuessLikeTCell.swift in Sources */,

@@ -26,6 +26,12 @@ class UTabBarController: UITabBarController {
                                image: UIImage(named: "tab_class"),
                                selectedImage: UIImage(named: "tab_class_S"))
         
+        //书架
+        let bookVC = UBookViewController(titles: ["收藏","书单","下载"], vcs: [UCollectListViewController(),UDocumentListViewController(),UDownloadListViewController()], pagestyles: .navigationBarSegment)
+        
+        addChildViewController(bookVC, title: "书架", image: UIImage(named: "tab_book"), selectedImage: UIImage(named: "tab_book_S"))
+        
+        
         
         
         
