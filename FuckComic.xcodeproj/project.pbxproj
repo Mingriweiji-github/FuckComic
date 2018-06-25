@@ -90,6 +90,8 @@
 		A6A925DC20E094F30023537D /* UCollectListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6A925DB20E094F30023537D /* UCollectListViewController.swift */; };
 		A6A925DE20E095220023537D /* UDocumentListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6A925DD20E095220023537D /* UDocumentListViewController.swift */; };
 		A6A925E020E095420023537D /* UDownloadListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6A925DF20E095420023537D /* UDownloadListViewController.swift */; };
+		A6A925E220E0BAB70023537D /* UMineHead.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6A925E120E0BAB70023537D /* UMineHead.swift */; };
+		A6A925E420E0BC450023537D /* UMineViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6A925E320E0BC450023537D /* UMineViewController.swift */; };
 		B62B32C548462D4913BB737A /* Pods_FuckComic.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 833313D58C4E583F489458F4 /* Pods_FuckComic.framework */; };
 /* End PBXBuildFile section */
 
@@ -202,6 +204,8 @@
 		A6A925DB20E094F30023537D /* UCollectListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UCollectListViewController.swift; sourceTree = "<group>"; };
 		A6A925DD20E095220023537D /* UDocumentListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UDocumentListViewController.swift; sourceTree = "<group>"; };
 		A6A925DF20E095420023537D /* UDownloadListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UDownloadListViewController.swift; sourceTree = "<group>"; };
+		A6A925E120E0BAB70023537D /* UMineHead.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UMineHead.swift; sourceTree = "<group>"; };
+		A6A925E320E0BC450023537D /* UMineViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UMineViewController.swift; sourceTree = "<group>"; };
 		F8DF1AD7E75AF9F9B3AD9F9B /* Pods-FuckComic.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FuckComic.debug.xcconfig"; path = "Pods/Target Support Files/Pods-FuckComic/Pods-FuckComic.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -383,6 +387,7 @@
 		A694E30320CA74A4000BAE43 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				A6A925E120E0BAB70023537D /* UMineHead.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -390,6 +395,7 @@
 		A694E30420CA74A4000BAE43 /* ViewController */ = {
 			isa = PBXGroup;
 			children = (
+				A6A925E320E0BC450023537D /* UMineViewController.swift */,
 			);
 			path = ViewController;
 			sourceTree = "<group>";
@@ -840,6 +846,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				A6A925CB20DBADE20023537D /* UVIPListViewController.swift in Sources */,
+				A6A925E420E0BC450023537D /* UMineViewController.swift in Sources */,
 				A6A9259120DA4B3A0023537D /* UCommentViewController.swift in Sources */,
 				A6A925A520DA526C0023537D /* UIDeviceExtension.swift in Sources */,
 				A6A9254C20D0EF9A0023537D /* USearchViewController.swift in Sources */,
@@ -867,6 +874,7 @@
 				A6A9259020DA4B3A0023537D /* UDetailViewController.swift in Sources */,
 				A6A925DC20E094F30023537D /* UCollectListViewController.swift in Sources */,
 				A6A9257620D3C82B0023537D /* UOtherWorksTCell.swift in Sources */,
+				A6A925E220E0BAB70023537D /* UMineHead.swift in Sources */,
 				A694E32020CFBF2D000BAE43 /* UHomeViewController.swift in Sources */,
 				A6A9257920D3C82B0023537D /* UReadTopBar.swift in Sources */,
 				A6A9258420DA3F690023537D /* UAPI.swift in Sources */,
