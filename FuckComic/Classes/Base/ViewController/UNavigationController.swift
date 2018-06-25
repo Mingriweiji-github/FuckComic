@@ -14,12 +14,12 @@ class UNavigationController: UINavigationController {
         
         guard let interactionGes = interactivePopGestureRecognizer else { return  }
         guard let targetView = interactionGes.view else { return }
-        guard let internalTargets = interactionGes.value(forKeyPath: "target") as? [NSObject]  else { return }
+        guard let internalTargets =  interactionGes.value(forKeyPath: "targets") as? [NSObject]  else { return }
         guard let internalTarget = internalTargets.first?.value(forKeyPath: "target") else { return }
         let action = Selector(("handleNavigationTransition:"))
         
         let fullScreenGesture = UIPanGestureRecognizer(target: internalTarget, action: action)
-        fullScreenGesture.delegate = self as? UIGestureRecognizerDelegate
+        fullScreenGesture.delegate = self as! UIGestureRecognizerDelegate
         targetView.addGestureRecognizer(fullScreenGesture)
         interactionGes.isEnabled = false
     }

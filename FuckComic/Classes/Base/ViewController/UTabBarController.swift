@@ -31,11 +31,10 @@ class UTabBarController: UITabBarController {
         
         addChildViewController(bookVC, title: "书架", image: UIImage(named: "tab_book"), selectedImage: UIImage(named: "tab_book_S"))
         
+        //我的
+        let mineVC = UMineViewController()
+        addChildViewController(mineVC, title: "我的", image: UIImage(named: "tab_mine"), selectedImage: UIImage(named: "tab_mine_S"))
         
-        
-        
-        
-         
     }
     
     func addChildViewController(_ childController: UIViewController, title: String?, image: UIImage?, selectedImage:UIImage?) {
@@ -48,6 +47,17 @@ class UTabBarController: UITabBarController {
         }
         
         addChildViewController(UNavigationController(rootViewController: childController))
+    }
+    
+}
+
+extension UTabBarController {
+    
+    override var preferredStatusBarStyle: UIStatusBarStyle{
+        guard let select = selectedViewController else {
+            return .lightContent
+        }
+        return select.preferredStatusBarStyle
     }
     
 }
